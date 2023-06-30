@@ -11,7 +11,6 @@ public class RandLetterTest {
 	public void testGetRandLetter() {
 		RandLetter oGetRlTest = new RandLetter();
 		char actVal  = oGetRlTest.getRandedVal();
-		assertTrue(actVal >= 'A' && actVal <= 'Z');
+		assertTrue(actVal >= 'A' && actVal <= 'Z');	
 	}
-
 }
