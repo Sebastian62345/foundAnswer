@@ -11,6 +11,13 @@ public class RandNumber {
 		randedNumber = (int)Math.floor(Math.random() * (max - min + 1) + min);
 		LObj.info("Wylosowana liczba " + randedNumber);
 	}
+	
+	/**
+	 * getRandedVal zwraca wylosowaną liczbbe
+	 * @param Metoda nie ma parametru wejsciowego
+	 * @return Metoda zwraca litere ktora zostala wygenerowana przy tworzeniu obiektu na podstawie klasy RandLetter
+	*/
+	
 	public int getRandedVal(){
 		return this.randedNumber;
 	}
