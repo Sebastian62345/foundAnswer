@@ -15,7 +15,7 @@ public class RandNumber {
 	/**
 	 * getRandedVal zwraca wylosowaną liczbbe
 	 * @param Metoda nie ma parametru wejsciowego
-	 * @return Metoda zwraca litere ktora zostala wygenerowana przy tworzeniu obiektu na podstawie klasy RandLetter
+	 * @return Metoda zwraca liczbe ktora zostala wygenerowana przy tworzeniu obiektu na podstawie klasy RandNumber
 	*/
 	
 	public int getRandedVal(){
