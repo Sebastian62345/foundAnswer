@@ -11,7 +11,7 @@ public class RandNumber {
 		randedNumber = (int)Math.floor(Math.random() * (max - min + 1) + min);
 		
 	}
-	public int getRandedNumber(){
+	public int getRandedVal(){
 		return this.randedNumber;
 	}
 	

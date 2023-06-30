@@ -10,7 +10,7 @@ public class RandNumberTest {
 	@Test
 	public void testGetRandedNumber() {
 		RandNumber oGetRnTest = new RandNumber();
-		int actVal  = oGetRnTest.getRandedNumber();
+		int actVal  = oGetRnTest.getRandedVal();
 		assertTrue(1 <= actVal && actVal <= 100);
 	}
 
