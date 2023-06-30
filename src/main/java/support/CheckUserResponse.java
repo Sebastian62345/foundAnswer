@@ -2,7 +2,6 @@ package support;
 import java.util.*;
 public class CheckUserResponse {
 	
-	String userResponse;
 	private char questionType;
 	private RandNumber oN;
 	private RandLetter oL;
@@ -18,7 +17,7 @@ public class CheckUserResponse {
 		this.questionType = 'L';
 	}
 
-	public char interactionWithUser() {
+	public void interactionWithUser() {
 		Scanner getUserAnswerN = new Scanner(System.in);
 		char result = 'X';
 		int userNum;
@@ -41,8 +40,7 @@ public class CheckUserResponse {
 					break;
 				}
 				//System.out.println("Wpisales " + uResponse);
-				result = 'Z';
-			
+				
 			}
 		}
 		
@@ -50,9 +48,7 @@ public class CheckUserResponse {
 			System.out.print("Podaj literę o której Twoim zdaniem myślę: ");
 			Scanner getUserAnswerS = new Scanner(System.in);
 			System.out.println("Wpisales " + uResponse);
-			result =  'Z';
 			
 		}
-		return result;
 	}
 }
