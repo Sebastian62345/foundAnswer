@@ -16,4 +16,4 @@ buildNumber.properties
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 # blokada dla log4j
-log.out
+.log.out

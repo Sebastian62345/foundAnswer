@@ -12,20 +12,26 @@ public class UI {
 		System.out.println("Witaj w grze która polega na odgadnięciu litery albo cyfry która wylosuje:");
 		System.out.println("Wpisz cyfre 1 jeśli chcesz zgadnąć jaką liczbę wylosowałem z zakresu 0 - 100.");
 		System.out.println("Wpisz literę A jeśli chcesz zgadnąć jaką litere wylosowałem z zakresu A - Z.");
-		System.out.println("Wpisz literę X jesli chcesz zakończyć program.");
+		System.out.println("Wpisz cyfrę 0 w kazdym przypadku jesli chcesz zakończyć program.");
 		Scanner gud = new Scanner(System.in);
 		while(true) {
 			System.out.print("Wwój wybór to: ");
 			choice = gud.nextLine();
-			if(choice.equals("X") || choice.equals("x") ) {
+			if(choice.equals("0")) {
 				System.out.println("Program zostanie zakończony wybrano X");
 				break;
 			} else if (choice.equals("1") ) {
 				LObj.info("Wybrano losowanie liczby");
 				RandNumber oRandNum = new RandNumber();
-				System.out.println("Wylosowano liczbe " + oRandNum.getRandedNumber() );
+				while(1) {
+					
+				}
+				
+				System.out.println("Wylosowano liczbe " + oRandNum.getRandedVal() );
 			} else if (choice.equals("A") || choice.equals("a")) {
 				LObj.info("Wybrano losowanie litery");
+				RandLetter oRandLetter = new RandLetter();
+				LObj.info("Wylosowana litera to: " + oRandLetter.getRandedVal());
 			} else {
 				LObj.info("Zła Opcja");
 			}
