@@ -4,13 +4,13 @@ public class RandLetter  {
 	byte min = 65; // Minimum value of range
 	byte max = 90; // Maximum value of range
 	byte asciCodeDec;
-	String randedLetter;
+	char randedLetter;
 	public RandLetter() {
 		asciCodeDec = (byte)Math.floor(Math.random() * (max - min + 1) + min);
-		randedLetter = new Character((char) asciCodeDec).toString();
+		randedLetter = new Character((char) asciCodeDec);
 	}
 	
-	public String getRandedVal(){
+	public char getRandedVal(){
 		return this.randedLetter;
 	}
 	
