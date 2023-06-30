@@ -14,8 +14,16 @@ public class CheckUserResponse {
 	}
 
 	public char interactionWithUser() {
+		char result = 'X';
 		if(questionType == 'N') {
-			System.out.print("podaj liczbę o której Twoim zdaniem myślę: ")
+			System.out.print("Podaj liczbę o której Twoim zdaniem myślę: ");
+			result = 'Z';
 		}
+		
+		if(questionType == 'L') {
+			System.out.print("Podaj literę o której Twoim zdaniem myślę: ");
+			result =  'Z';
+		}
+		return result;
 	}
 }

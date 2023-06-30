@@ -23,15 +23,23 @@ public class UI {
 			} else if (choice.equals("1") ) {
 				LObj.info("Wybrano losowanie liczby");
 				RandNumber oRandNum = new RandNumber();
-				while(1) {
-					
+				CheckUserResponse oUserAnswr = new CheckUserResponse(oRandNum);
+				System.out.println("Wylosowano liczbę " + oRandNum.getRandedVal());
+				while(true) {
+					oUserAnswr.interactionWithUser();
+					break;
 				}
 				
-				System.out.println("Wylosowano liczbe " + oRandNum.getRandedVal() );
+				
 			} else if (choice.equals("A") || choice.equals("a")) {
 				LObj.info("Wybrano losowanie litery");
 				RandLetter oRandLetter = new RandLetter();
+				CheckUserResponse oUserAnswr = new CheckUserResponse(oRandLetter);
 				LObj.info("Wylosowana litera to: " + oRandLetter.getRandedVal());
+				while(true) {
+					oUserAnswr.interactionWithUser();
+					break;
+				}
 			} else {
 				LObj.info("Zła Opcja");
 			}
