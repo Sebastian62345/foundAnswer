@@ -47,7 +47,7 @@ public class CheckUserResponse {
 		if(questionType == 'L') {
 			System.out.print("Podaj literę o której Twoim zdaniem myślę: ");
 			Scanner getUserAnswerC = new Scanner(System.in);
-			System.out.println("Wylosowana " +  oL.getRandedVal());
+			//System.out.println("Wylosowana " +  oL.getRandedVal());
 			while(true) {
 				uResponseChr = getUserAnswer.next().charAt(0);
 				uResponseChr = Character.toUpperCase(uResponseChr);
@@ -55,9 +55,9 @@ public class CheckUserResponse {
 					System.out.println("Wybrano zero - program zostanie zakończony");
 					System.exit(0); 
 				} else if (uResponseChr > oL.getRandedVal()) {
-					System.out.println("Liczba o ktorej myślę jest przed wpisaną liczbą w alfabecie: ");
+					System.out.println("Liczba o ktorej myślę jest przed wpisaną liczbą w alfabecie zgaduj dalej: ");
 				} else if (uResponseChr < oL.getRandedVal()) {
-					System.out.println("Liczba o ktorej myślę  jest za wpisaną liczbą w alfabecie: ");
+					System.out.println("Liczba o ktorej myślę  jest za wpisaną liczbą w alfabecie zgaduj dalej: ");
 				} else if (uResponseChr ==  oL.getRandedVal()) {
 					System.out.println("Brawo zgadłeś");
 					break;
